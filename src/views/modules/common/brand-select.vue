@@ -38,7 +38,7 @@ export default {
   //监控data中的数据变化
   watch: {
     brandId(val) {
-      this.PubSub.publish("brandId", val);
+      PubSub.publish("brandId", val); // Delete 'this.' based on original code
     }
   },
   //方法集合

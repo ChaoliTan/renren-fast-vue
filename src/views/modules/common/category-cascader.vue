@@ -54,7 +54,7 @@ export default {
     paths(v){
       this.$emit("update:catelogPath",v);
       //还可以使用pubsub-js进行传值
-      this.PubSub.publish("catPath",v);
+      PubSub.publish("catPath",v); // Delete 'this.' based on original code
     }
   },
   //方法集合
